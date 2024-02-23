@@ -1,0 +1,287 @@
+﻿; This file was created by <parvatarohin> using TECkitMappingEditorU v5.0.0.0 on 22.02.2024.
+
+LHSName                 "ITRANS"
+RHSName                 "Unicode/Bulgarian ITRANS"
+LHSDescription          "ITRANS input method for Unicode Bulgarian (IAST)"
+Version                 "1.00"
+Contact                 "mailto:parvatarohin@outlook.com"
+Copyright               "LaTeX Project Public License"
+
+Define a  U+0061
+Define b  U+0062
+Define c  U+0063
+Define d  U+0064
+Define e  U+0065
+Define f  U+0066
+Define g  U+0067
+Define h  U+0068
+Define i  U+0069
+Define j  U+006A
+Define k  U+006B
+Define l  U+006C
+Define m  U+006D
+Define n  U+006E
+Define o  U+006F
+Define p  U+0070
+Define q  U+0071
+Define r  U+0072
+Define s  U+0073
+Define t  U+0074
+Define u  U+0075
+Define v  U+0076
+Define w  U+0077
+Define x  U+0078
+Define y  U+0079
+Define z  U+007A
+
+Define A  U+0041
+Define B  U+0042
+Define C  U+0043
+Define D  U+0044
+Define E  U+0045
+Define F  U+0046
+Define G  U+0047
+Define H  U+0048
+Define I  U+0049
+Define J  U+004A
+Define K  U+004B
+Define L  U+004C
+Define M  U+004D
+Define N  U+004E
+Define O  U+004F
+Define P  U+0050
+Define Q  U+0051
+Define R  U+0052
+Define S  U+0053
+Define T  U+0054
+Define U  U+0055
+Define V  U+0056
+Define W  U+0057
+Define X  U+0058
+Define Y  U+0059
+Define Z  U+005A
+
+Define cyra       U+0430 ; а
+Define cyrb       U+0431 ; б
+Define cyrv       U+0432 ; в
+Define cyrg       U+0433 ; г
+Define cyrd       U+0434 ; д
+Define cyre       U+0435 ; е
+Define cyrj       U+0436 ; ж
+Define cyrz       U+0437 ; з
+Define cyri       U+0438 ; и
+Define ikratko    U+0439 ; й
+Define cyrk       U+043A ; к
+Define cyrl       U+043B ; л
+Define cyrm       U+043C ; м
+Define cyrn       U+043D ; н
+Define cyro       U+043E ; о
+Define cyrp       U+043F ; п
+Define cyrr       U+0440 ; р
+Define cyrs       U+0441 ; с
+Define cyrt       U+0442 ; т
+Define cyru       U+0443 ; у
+Define cyrf       U+0444 ; ф
+Define cyrh       U+0445 ; х
+Define cyrtz      U+0446 ; ц
+Define cyrch      U+0447 ; ч
+Define cyrsh      U+0448 ; ш
+Define cyrsht     U+0449 ; щ
+Define cyrer      U+044A ; ъ
+Define ermalak    U+044C ; ь
+Define cyryu      U+044E ; ю
+Define cyrya      U+044F ; я
+
+Define macronabove  U+0304 ; тире отгоре
+Define macronbelow  U+0331 ; тире отдолу
+Define dotabove     U+0307 ; точка отгоре
+Define dotbelow     U+0323 ; точка отдолу
+Define tildeabove   U+0303 ; тилда отгоре
+Define candrabindu  U+0310 ; чандрабинду
+Define acuteabove   U+0301 ; ударение отгоре
+
+Define tire         U+002D ; тире
+Define dot          U+002E ; точка
+Define ddot         U+002E U+002E ; две точки
+Define bar          U+007C ; вертикална линия
+Define dbar         U+2016 ; двойна вертикална линия
+Define danda        U+0964 ; данда
+Define ddanda       U+0965 ; двойна данда
+Define apo          U+0027 ; апосторф
+Define tilda        U+007E ; тилда
+Define cret         U+005E ; каретка
+Define zero         U+0CE6 ;
+Define lcb          U+007B ; лява къдрава скоба
+Define rcb          U+007D ; дясна къдрава скоба
+Define zwj          U+200D ; zero width joiner
+Define zwn          U+200C ; zero width non-joiner
+
+pass(Unicode)
+
+; TeX
+
+U+002D U+002D           <>   U+2013  ; --  en-dash
+U+002D U+002D U+002D    <>   U+2014  ; --- em-dash
+U+0027                  <>   U+2019  ; '   right single quote
+U+0027 U+0027           <>   U+201D  ; ''  right double quote
+U+0022                   >   U+201D  ; "   right double quote
+U+0060                  <>   U+2018  ; `   left single quote
+U+0060 U+0060           <>   U+201C  ; ``  left double quote
+
+; Bulgarian yu and ya
+
+y a           > cyrya
+y u           > cyryu
+
+; Sanskrit vowels
+
+a             > cyra
+a a           > cyra macronabove
+A             > cyra macronabove
+i             > cyri
+i i           > cyri macronabove
+I             > cyri macronabove
+u             > cyru
+u u           > cyru macronabove
+U             > cyru macronabove
+R cret i      > cyrr dotbelow
+R R i         > cyrr dotbelow
+R cret I      > cyrr dotbelow macronabove
+R R I         > cyrr dotbelow macronabove
+L cret i      > cyrl dotbelow
+L L i         > cyrl dotbelow
+L cret I      > cyrl dotbelow macronabove
+L L I         > cyrl dotbelow macronabove
+e             > cyre
+a i           > cyra cyri
+o             > cyro
+a u           > cyra cyru
+O M           > cyro cyrm
+A U M         > cyro cyrm
+
+; Sanskrit consonants
+
+k             > cyrk
+k h           > cyrk cyrh
+g             > cyrg
+g h           > cyrg cyrh
+tilda N       > cyrn dotabove
+N cret        > cyrn dotabove
+c             > cyrch
+c h           > cyrch
+C h           > cyrch cyrh
+c h h         > cyrch cyrh
+j             > cyrd cyrj
+j h           > cyrd cyrj cyrh
+tilda n       > cyrn tildeabove
+J N           > cyrn tildeabove
+T             > cyrt dotbelow
+T h           > cyrt dotbelow cyrh
+D             > cyrd dotbelow
+D h           > cyrd dotbelow cyrh
+N             > cyrn dotbelow
+t             > cyrt
+t h           > cyrt cyrh
+d             > cyrd
+d h           > cyrd cyrh
+n             > cyrn
+p             > cyrp
+p h           > cyrp cyrh
+b             > cyrb
+b h           > cyrb cyrh
+m             > cyrm
+y             > ikratko
+r             > cyrr
+l             > cyrl
+v             > cyrv
+w             > cyrv
+s h           > cyrsh acuteabove
+S             > cyrsh dotbelow
+S h           > cyrsh dotbelow
+s h h         > cyrsh dotbelow
+Z             > cyrsh dotbelow
+s             > cyrs
+h             > cyrh
+
+; Additional characters for Classical and Vedic Sanskrit
+
+H             > cyrh dotbelow
+M             > cyrm dotabove
+dot n         > cyrm dotabove
+dot m         > cyrm dotabove
+dot N         > cyrm candrabindu
+L             > cyrl macronbelow
+k S           > cyrk cyrsh dotbelow
+k S h         > cyrk cyrsh dotbelow
+x             > cyrk cyrsh dotbelow
+j tilda n     > cyrd cyrj cyrn tildeabove
+G Y           > cyrd cyrj cyrn tildeabove
+d n y         > cyrd cyrj cyrn tildeabove
+
+k dot h       > cyrk
+k h dot h     > cyrk cyrh
+g dot h       > cyrg
+g h dot h     > cyrg cyrh
+tilda N dot h > cyrn dotabove
+N cret dot h  > cyrn dotabove
+j dot h       > cyrd cyrj
+j h dot h     > cyrd cyrj cyrh
+tilda n dot h > cyrn tildeabove
+T dot h       > cyrt dotbelow
+T h dot h     > cyrt dotbelow cyrh
+D dot h       > cyrd dotbelow
+D h dot h     > cyrd dotbelow cyrh
+N dot h       > cyrn dotbelow
+t dot h       > cyrt
+t h dot h     > cyrt cyrh
+d dot h       > cyrd
+d h dot h     > cyrd cyrh
+n dot h       > cyrn
+p dot h       > cyrp
+p h dot h     > cyrp cyrh
+b dot h       > cyrb
+b h dot h     > cyrb cyrh
+m dot h       > cyrm
+y dot h       > ikratko
+r dot h       > cyrr
+l dot h       > cyrl
+L dot h       > cyrl macronbelow
+v dot h       > cyrv
+w dot h       > cyrv
+s h dot h     > cyrsh acuteabove
+s h h dot h   > cyrsh dotbelow
+S h dot h     > cyrsh dotbelow
+S dot h       > cyrsh dotbelow
+Z dot h       > cyrsh dotbelow
+s dot h       > cyrs
+h dot h       > cyrh
+x dot h       > cyrk cyrsh dotbelow
+k S h dot h   > cyrk cyrsh dotbelow
+
+N cret x        > zero cyrk cyrsh dotbelow
+v a cret cret r > cyrv cyrr
+m lcb rcb       > cyrm
+lcb rcb         > zwn
+
+; Additional characters for modern Indian languages
+
+q             > cyrk
+K             > cyrk cyrh
+G             > cyrg dotabove
+z             > cyrz
+J             > cyrz
+f             > cyrf
+dot D         > cyrr dotbelow
+dot D h       > cyrr dotbelow cyrh
+A dot c       > cyro
+R             > cyrr macronabove
+
+; Sanskrit punctuation marks
+
+tire          > U+2013
+dot           > U+002E
+bar           > U+002E
+ddot          > U+002E U+002E
+bar bar       > U+002E U+002E
+dot a         > apo
+dot a lcb rcb > apo

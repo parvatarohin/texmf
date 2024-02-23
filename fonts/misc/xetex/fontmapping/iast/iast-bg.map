@@ -1,0 +1,298 @@
+﻿; This file was created by <parvatarohin> using TECkitMappingEditorU v5.0.0.0 on 22.02.2024.
+
+LHSName            "iast-bg"
+RHSName            "UNICODE"
+LHSDescription     "IAST to Bulgarian transliteration"
+RHSDescription     "UNICODE"
+Version            "1.0"
+Contact            "mailto:parvatarohin@outlook.com"
+Copyright          "LaTeX Project Public License"
+
+Define dot           U+002E ; точка
+Define ellipsis      U+2026 ; многоточие
+Define dotbellow     U+0323 ; точка отдолу
+Define dotabove      U+0307 ; точка отгоре
+Define tildeabove    U+0303 ; тилда отгоре
+Define candrabindu   U+0310 ; чандрабинду
+Define macronabove   U+0304 ; тире отгоре
+Define macronbellow  U+0331 ; тире отдолу
+Define acuteabove    U+0301 ; ударение отгоре
+Define bar           U+007C ; вертикална линия
+Define dbar          U+2016 ; двойна вертикална линия
+
+Define amacron       U+0101 ; ā
+Define imacron       U+012B ; ī
+Define umacron       U+016B ; ū
+Define rdot          U+1E5B ; ṛ
+Define ridot         U+1E5D ; ṝ
+Define ldot          U+1E37 ; ḷ
+Define lidot         U+1E39 ; ḹ
+Define lmacron       U+1E3B ; ḻ
+Define mdot          U+1E43 ; ṃ
+Define mmdot         U+1E41 ; ṁ
+Define hdot          U+1E25 ; ḥ
+Define tdot          U+1E6D ; ṭ
+Define ddot          U+1E0D ; ḍ
+Define nndot         U+1E45 ; ṅ
+Define ntilde        U+00F1 ; ñ
+Define ndot          U+1E47 ; ṇ
+Define sacute        U+015B ; ś
+Define sdot          U+1E63 ; ṣ
+Define ksh           U+006B U+1E63 ; kṣ
+Define mcandrabindu  U+006D U+0310
+
+Define Amacron       U+0100 ; Ā
+Define Imacron       U+012A ; Ī
+Define Umacron       U+016A ; Ū
+Define Rdot          U+1E5A ; Ṛ
+Define Ridot         U+1E5C ; Ṝ
+Define Ldot          U+1E36 ; Ḷ
+Define Lidot         U+1E38 ; Ḹ
+Define Lmacron       U+1E3A ; Ḻ
+Define Mdot          U+1E42 ; Ṃ
+Define Mmdot         U+1E40 ; Ṁ
+Define Hdot          U+1E24 ; Ḥ
+Define Tdot          U+1E6C ; Ṭ
+Define Ddot          U+1E0C ; Ḍ
+Define Nndot         U+1E44 ; Ṅ
+Define Ntilde        U+00D1 ; Ñ
+Define Ndot          U+1E46 ; Ṇ
+Define Sacute        U+015A ; Ś
+Define Sdot          U+1E62 ; Ṣ
+Define Ksh           U+004B U+1E62 ; KṢ
+Define Mcandrabindu  U+004D U+0310
+
+Define cyra       U+0430 ; а
+Define cyrb       U+0431 ; б
+Define cyrv       U+0432 ; в
+Define cyrg       U+0433 ; г
+Define cyrd       U+0434 ; д
+Define cyre       U+0435 ; е
+Define cyrj       U+0436 ; ж
+Define cyrz       U+0437 ; з
+Define cyri       U+0438 ; и
+Define cyrikratko U+0439 ; й
+Define cyrk       U+043A ; к
+Define cyrl       U+043B ; л
+Define cyrm       U+043C ; м
+Define cyrn       U+043D ; н
+Define cyro       U+043E ; о
+Define cyrp       U+043F ; п
+Define cyrr       U+0440 ; р
+Define cyrs       U+0441 ; с
+Define cyrt       U+0442 ; т
+Define cyru       U+0443 ; у
+Define cyrf       U+0444 ; ф
+Define cyrh       U+0445 ; х
+Define cyrtz      U+0446 ; ц
+Define cyrch      U+0447 ; ч
+Define cyrsh      U+0448 ; ш
+Define cyrsht     U+0449 ; щ
+Define cyrer      U+044A ; ъ
+Define cyrermalak U+044C ; ь
+Define cyryu      U+044E ; ю
+Define cyrya      U+044F ; я
+
+Define cyrA       U+0410 ; А
+Define cyrB       U+0411 ; Б
+Define cyrV       U+0412 ; В
+Define cyrG       U+0413 ; Г
+Define cyrD       U+0414 ; Д
+Define cyrE       U+0415 ; Е
+Define cyrJ       U+0416 ; Ж
+Define cyrZ       U+0417 ; З
+Define cyrI       U+0418 ; И
+Define cyrIkratko U+0419 ; Й
+Define cyrK       U+041A ; К
+Define cyrL       U+041B ; Л
+Define cyrM       U+041C ; М
+Define cyrN       U+041D ; Н
+Define cyrO       U+041E ; О
+Define cyrP       U+041F ; П
+Define cyrR       U+0420 ; Р
+Define cyrS       U+0421 ; С
+Define cyrT       U+0422 ; Т
+Define cyrU       U+0423 ; У
+Define cyrF       U+0424 ; Ф
+Define cyrH       U+0425 ; Х
+Define cyrTz      U+0426 ; Ц
+Define cyrCh      U+0427 ; Ч
+Define cyrSh      U+0428 ; Ш
+Define cyrSht     U+0429 ; Щ
+Define cyrEr      U+042A ; Ъ
+Define cyrErmalak U+042C ; Ь
+Define cyrYu      U+042E ; Ю
+Define cyrYa      U+042F ; Я
+
+Define a          U+0061
+Define b          U+0062
+Define c          U+0063
+Define d          U+0064
+Define e          U+0065
+Define f          U+0066
+Define g          U+0067
+Define h          U+0068
+Define i          U+0069
+Define j          U+006A
+Define k          U+006B
+Define l          U+006C
+Define m          U+006D
+Define n          U+006E
+Define o          U+006F
+Define p          U+0070
+Define q          U+0071
+Define r          U+0072
+Define s          U+0073
+Define t          U+0074
+Define u          U+0075
+Define v          U+0076
+Define w          U+0077
+Define x          U+0078
+Define y          U+0079
+Define z          U+007A
+
+Define A          U+0041
+Define B          U+0042
+Define C          U+0043
+Define D          U+0044
+Define E          U+0045
+Define F          U+0046
+Define G          U+0047
+Define H          U+0048
+Define I          U+0049
+Define J          U+004A
+Define K          U+004B
+Define L          U+004C
+Define M          U+004D
+Define N          U+004E
+Define O          U+004F
+Define P          U+0050
+Define Q          U+0051
+Define R          U+0052
+Define S          U+0053
+Define T          U+0054
+Define U          U+0055
+Define V          U+0056
+Define W          U+0057
+Define X          U+0058
+Define Y          U+0059
+Define Z          U+005A
+
+pass(Unicode)
+
+a > cyra
+b > cyrb
+c > cyrch
+d > cyrd
+e > cyre
+f > cyrf
+g > cyrg
+h > cyrh
+i > cyri
+j > cyrd cyrj
+k > cyrk
+l > cyrl
+m > cyrm
+n > cyrn
+o > cyro
+p > cyrp
+q > cyrk
+r > cyrr
+s > cyrs
+t > cyrt
+u > cyru
+v > cyrv
+w > cyrv
+; x
+y > cyrikratko
+z > cyrz
+
+y a > cyrya
+y u > cyryu
+
+A > cyrA
+B > cyrB
+C > cyrCh
+D > cyrD
+E > cyrE
+F > cyrF
+G > cyrG
+H > cyrH
+I > cyrI
+J > cyrD cyrJ
+K > cyrK
+L > cyrL
+M > cyrM
+N > cyrN
+O > cyrO
+P > cyrP
+Q > cyrK
+R > cyrR
+S > cyrS
+T > cyrT
+U > cyrU
+V > cyrV
+W > cyrV
+; X
+Y > cyrIkratko
+Z > cyrZ
+
+Y A > cyrYa
+Y U > cyrYu
+Y a > cyrYa
+Y u > cyrYu
+
+amacron > cyra macronabove           ; а с тире отгоре
+imacron > cyri macronabove           ; и с тире отгоре
+umacron > cyru macronabove           ; у с тире отгоре
+rdot    > cyrr dotbellow             ; р с точка отдолу
+ridot   > cyrr dotbellow macronabove ; р с точка отдолу тире отгоре
+ldot    > cyrl dotbellow             ; л с точка отдолу
+lidot   > cyrl dotbellow macronabove ; л с точка отдолу тире отгоре
+lmacron > cyrl macronbellow          ; л с тире отдолу
+mdot    > cyrm dotbellow             ; м с точка отдолу
+mmdot   > cyrm dotabove              ; м с точка отгоре
+hdot    > cyrh dotbellow             ; х с точка отдолу
+tdot    > cyrt dotbellow             ; т с точка отдолу
+ddot    > cyrd dotbellow             ; д с точка отдолу
+nndot   > cyrn dotabove              ; н с точка отгоре
+ntilde  > cyrn tildeabove            ; н с тилда отгоре
+ndot    > cyrn dotbellow             ; н с точка отдолу
+sacute  > cyrsh acuteabove           ; ш с ударение отгоре
+sdot    > cyrsh dotbellow            ; ш с точка отдолу
+x       > cyrk cyrsh dotbellow       ; kш с точка отдолу
+
+Amacron > cyrA macronabove           ; а с тире отгоре
+Imacron > cyrI macronabove           ; и с тире отгоре
+Umacron > cyrU macronabove           ; у с тире отгоре
+Rdot    > cyrR dotbellow             ; р с точка отдолу
+Ridot   > cyrR dotbellow             ; р с точка отдолу тире отгоре
+Ldot    > cyrL dotbellow             ; л с точка отдолу
+Lidot   > cyrL dotbellow             ; л с точка отдолу тире отгоре
+Lmacron > cyrL macronbellow          ; л с тире отдолу
+Mdot    > cyrM dotbellow             ; м с точка отдолу
+Mmdot   > cyrM dotabove              ; м с точка отгоре
+Hdot    > cyrH dotbellow             ; х с точка отдолу
+Tdot    > cyrT dotbellow             ; т с точка отдолу
+Ddot    > cyrD dotbellow             ; д с точка отдолу
+Nndot   > cyrN dotabove              ; н с точка отгоре
+Ntilde  > cyrN tildeabove            ; н с тилда отгоре
+Ndot    > cyrN dotbellow             ; н с точка отдолу
+Sacute  > cyrSh acuteabove           ; ш с ударение отгоре
+Sdot    > cyrSh dotbellow            ; ш с точка отдолу
+X       > cyrK cyrSh dotbellow       ; kш с точка отдолу
+
+mcandrabindu  > cyrm candrabindu     ; м с чандрабинду
+Mcandrabindu  > cyrM candrabindu     ; м с чандрабинду
+
+U+002D U+002D           <>   U+2013  ; --  en-dash
+U+002D U+002D U+002D    <>   U+2014  ; --- em-dash
+U+0027                  <>   U+2019  ; '   right single quote
+U+0027 U+0027           <>   U+201D  ; ''  right double quote
+U+0022                   >   U+201D  ; "   right double quote
+U+0060                  <>   U+2018  ; `   left single quote
+U+0060 U+0060           <>   U+201C  ; ``  left double quote
+
+dot         > U+002E
+dot dot     > U+002E
+dot dot dot > ellipsis

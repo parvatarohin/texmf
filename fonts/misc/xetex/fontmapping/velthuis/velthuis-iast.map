@@ -1,0 +1,58 @@
+﻿; This file was created by <parvatarohin> using TECkitMappingEditorU v5.0.0.0 on 22.02.2024.
+
+LHSName                 "Velthuis-Sanskrit-IAST"
+RHSName                 "UNICODE"
+LHSDescription          "Velthuis input method for IAST Sanskrit transliteration"
+RHSDescription          "UNICODE"
+Version                 "1.0"
+Contact                 "mailto:parvatarohin@outlook.com"
+Copyright               "LaTeX Project Public License"
+
+Define a U+0061  ; a
+Define d U+0064  ; d
+Define h U+0068  ; h
+Define i U+0069  ; i
+Define l U+006C  ; l
+Define m U+006D  ; m
+Define n U+006E  ; n
+Define r U+0072  ; r
+Define o U+006F  ; o
+Define s U+0073  ; s
+Define t U+0074  ; t
+Define u U+0075  ; u
+
+Define quot	U+0022
+Define dot	U+002E
+Define tlde	U+007E
+
+Define Asvara U+0101
+Define Isvara U+012B
+Define Usvara U+016B
+Define rvoc U+1E5B
+Define Rvoc U+1E5D
+Define lvoc U+1E37
+Define Lvoc U+1E39
+Define bindu U+1E43
+Define visarga U+1E25
+Define avagraha U+0027
+
+pass(Unicode)
+
+a a <> Asvara
+i i <> Isvara
+u u <> Usvara
+dot r <> rvoc
+dot r r <> Rvoc
+dot l <> lvoc
+dot l l <> Lvoc
+dot m <> bindu
+dot h <> visarga
+dot a <> avagraha
+quot n <> U+1E45   ; ṅ
+tlde n <> U+00F1   ; ñ
+dot t <> U+1E6D    ; ṭ
+dot d <> U+1E0D    ; ḍ
+dot n <> U+1E47    ; ṇ
+quot s <> U+015B   ; ś
+dot s <> U+1E63    ; ṣ
+dot o <> o U+1E43  ; oṃ
