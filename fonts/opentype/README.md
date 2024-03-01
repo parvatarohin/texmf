@@ -10,6 +10,7 @@
 
 ## Cyrillic
 
+- [Literata](https://www.type-together.com/literata-font)
 - [New Computer Modern](https://ctan.org/pkg/newcomputermodern)
 
 ## Devanāgarī
