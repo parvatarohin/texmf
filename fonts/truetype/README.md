@@ -3,6 +3,7 @@
 ## Devanāgarī
 
 - [Adishila Vedic](https://adishila.com/fonts/)
+- [Nakula](https://bombay.indology.info/software/fonts/devanagari/index.html)
 - [Siddhanta](https://svayambhava.blogspot.com/p/siddhanta-devanagariunicode-open-type.html)
 
 ## IAST
