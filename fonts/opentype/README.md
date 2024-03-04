@@ -15,6 +15,7 @@
 
 ## Devanāgarī
 
+- [Adobe Devanagari](https://fonts.adobe.com/fonts/adobe-devanagari)
 - [Murty Sanskrit](https://www.murtylibrary.com/about/design-and-typography)
 - [New Computer Modern Devanagari](https://ctan.org/pkg/newcomputermodern)
 - [Pedantic Devanagari](https://github.com/chchch/PedanticIndic)
