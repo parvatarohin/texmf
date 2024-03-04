@@ -12,3 +12,5 @@ ITRANS to IAST
 
 Velthuis to Devanāgarī  
 Velthuis to IAST
+
+[TECkit mappings for Indic scripts in XeTeX by David M. Jones](/fonts/misc/xetex/fontmapping/brahmic/README.md)
