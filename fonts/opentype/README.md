@@ -26,6 +26,7 @@
 
 ## Telugu
 
+- [Adobe Telugu](https://fonts.adobe.com/fonts/adobe-telugu#fonts-section)
 - [Murty Telugu](https://www.murtylibrary.com/about/design-and-typography)
 - [Pedantic Telugu](https://github.com/chchch/PedanticIndic)
 - [Tiro Telugu](https://github.com/TiroTypeworks/Indigo)
