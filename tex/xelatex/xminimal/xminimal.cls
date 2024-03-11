@@ -55,6 +55,7 @@
 
 \RequirePackage{ifthen}
 \RequirePackage{xparse}
+\RequirePackage{xspace}
 \RequirePackage{tabularx}
 
 \RequirePackage[nomarginpar]{geometry}
@@ -84,6 +85,13 @@
 \setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
 \DeclareGraphicsExtensions{.png, .jpg, .jpeg, .pdf}
 
+\RequirePackage{fancyvrb}
+\fvset{gobble=1,numbers=left}
+
+\RequirePackage{enumitem}
+\setlist[itemize]{noitemsep}
+\setlist[description]{style=nextline,leftmargin=1.25em}
+
 \RequirePackage{fontspec}
 \defaultfontfeatures{Scale=MatchLowercase,Mapping=tex-text}
 \setmainfont{brill}[%
@@ -106,7 +114,9 @@
 \newcommand{\sa}[1]{\textsanskrit{\sanskritfont#1}}
 \newcommand{\tl}[1]{\emph{\textsanskrit\sanskritfont#1}}
 
-\RequirePackage{xspace}
+\newcommand{\danda}{{\dn।}\@\xspace}
+\newcommand{\ddanda}{{\dn॥}\@\xspace}
+
 \newcommand{\st}{\textsuperscript{\textup{st}}\xspace}
 \newcommand{\nd}{\textsuperscript{\textup{nd}}\xspace}
 \newcommand{\rd}{\textsuperscript{\textup{rd}}\xspace}
@@ -115,8 +125,8 @@
 \newcommand\eg{\textit{e.g.,}\xspace}
 \newcommand\ie{\textit{i.e.,}\xspace}
 \newcommand\viz{\textit{viz.}\@\xspace}
-\newcommand\etal{\textit{et~al.}\@\xspace}
 \newcommand\etc{\textit{etc.}\@\xspace}
+\newcommand\etal{\textit{et~al.}\@\xspace}
 
 \newcommand{\AD}{\textsc{ce}{}\@\xspace}
 \newcommand{\BC}{\textsc{bce}{}\@\xspace}
@@ -125,10 +135,3 @@
 \newcommand{\IAST}{\textsc{iast}{}\@\xspace}
 
 \def\fr#1/#2{{\addfontfeatures{Fractions=On}#1/#2}}
-
-\RequirePackage{fancyvrb}
-\fvset{gobble=1,numbers=left}
-
-\RequirePackage{enumitem}
-\setlist[itemize]{noitemsep}
-\setlist[description]{style=nextline,leftmargin=1.25em}
