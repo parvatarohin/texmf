@@ -80,7 +80,7 @@
 \vfuzz2pt
 \hfuzz2pt
 
-\RequirePackage[usenames, dvipsnames]{xcolor}
+\RequirePackage[dvipsnames]{xcolor}
 \RequirePackage{latexcolors}
 \definecolor{darkpowderblue}{rgb}{0.0, 0.2, 0.6}
 \definecolor{cadmiumred}{rgb}{0.89, 0.0, 0.13}
