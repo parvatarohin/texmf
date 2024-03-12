@@ -64,6 +64,10 @@
 \setlength{\emergencystretch}{3em}
 \frenchspacing
 
+\makeatletter
+\let\ps@plain\ps@empty
+\makeatother
+
 \clubpenalty=9996
 \widowpenalty=9999
 \brokenpenalty=4991
@@ -110,12 +114,23 @@
 \newfontfamily\sanskritfont[Script=Latin,Numbers=Lining,Scale=MatchLowercase]{Brill}
 \newfontfamily\devanagarifont[Script=Devanagari,Mapping=iast-dn,Scale=MatchLowercase]{Shobhika}
 
+\newenvironment{sloka}
+{\begingroup
+  \setlength{\topsep}{0pt}
+  \setlength{\partopsep}{0pt}
+  \list{}{\rightmargin\leftmargin}%
+  \item\relax}
+{\endlist\endgroup}
+
 \newcommand{\dn}[1]{\textsanskrit{\devanagarifont#1}}
 \newcommand{\sa}[1]{\textsanskrit{\sanskritfont#1}}
 \newcommand{\tl}[1]{\emph{\textsanskrit\sanskritfont#1}}
 
 \newcommand{\danda}{{\dn।}\@\xspace}
 \newcommand{\ddanda}{{\dn॥}\@\xspace}
+
+\newcommand{\ensa}[2]{\sa{#1} (\dn{#2})}
+\newcommand{\saen}[2]{\dn{#1} (\sa{#2})}
 
 \newcommand{\st}{\textsuperscript{\textup{st}}\xspace}
 \newcommand{\nd}{\textsuperscript{\textup{nd}}\xspace}
@@ -135,3 +150,5 @@
 \newcommand{\IAST}{\textsc{iast}{}\@\xspace}
 
 \def\fr#1/#2{{\addfontfeatures{Fractions=On}#1/#2}}
+
+\endinput
