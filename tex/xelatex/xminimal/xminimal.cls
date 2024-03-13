@@ -98,6 +98,7 @@
 
 \RequirePackage{fontspec}
 \defaultfontfeatures{Scale=MatchLowercase,Mapping=tex-text}
+
 \setmainfont{brill}[%
   Extension      = .ttf,
   UprightFont    = *-roman,
@@ -105,6 +106,25 @@
   BoldFont       = *-bold,
   BoldItalicFont = *-bolditalic,
   Numbers        = Lining
+]
+
+\setsansfont{libertinus-sans}[%
+  Extension           = .otf,
+  UprightFont         = *-regular,
+  ItalicFont          = *-italic,
+  ItalicFeatures      = {SmallCapsFont=*-italic},
+  SlantedFont         = *-regular,
+  SlantedFeatures     = {FakeSlant=0.2},
+  BoldFont            = *-bold,
+  BoldFeatures        = {SmallCapsFont=*-bold},
+  BoldItalicFont      = *-italic,
+  BoldItalicFeatures  = {RawFeature={embolden=3},SmallCapsFont=*-italic},
+  BoldSlantedFont     = *-bold,
+  BoldSlantedFeatures = {FakeSlant=0.2,SmallCapsFont=*-bold},
+  SmallCapsFont       = *-regular,
+  SmallCapsFeatures   = {Letters=SmallCaps},
+  RawFeature          = {+lnum;-onum;+tnum},
+  Scale               = MatchLowercase
 ]
 
 \RequirePackage{polyglossia}
