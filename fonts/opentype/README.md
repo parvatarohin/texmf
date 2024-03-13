@@ -10,6 +10,7 @@
 
 ## Cyrillic
 
+- [Libertinus Fonts](https://github.com/alerque/libertinus)
 - [Literata](https://www.type-together.com/literata-font)
 - [New Computer Modern](https://ctan.org/pkg/newcomputermodern)
 
