@@ -148,6 +148,7 @@
 
 \newcommand{\danda}{{\dn।}\@\xspace}
 \newcommand{\ddanda}{{\dn॥}\@\xspace}
+\newcommand{\iti}[1]{\begin{center}{\dn॥}\@\xspace \textsanskrit#1 {\dn॥}\end{center}\par}
 
 \newcommand{\ensa}[2]{\sa{#1} (\dn{#2})}
 \newcommand{\saen}[2]{\dn{#1} (\sa{#2})}
