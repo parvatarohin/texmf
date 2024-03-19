@@ -19,11 +19,20 @@
 
 \documentclass[twoside]{xarticle}
 
-\title{\hologo{XeLaTeX} Article}
+\setcounter{tocdepth}{2}
+\setcounter{secnumdepth}{0}
+
+\title{The Article}
 \author{The Author}
 \date{\relax}
 
-\setcounter{tocdepth}{3}
+\hypersetup{%
+  pdftitle={My Title},
+  pdfauthor={A. Author},
+  pdfauthortitle={Prof.},
+	pdfsubject={XeLaTeX},
+	pdfkeywords={latex,xelatex,typesetting}
+}
 
 \begin{document}
 \hyphenation{%
@@ -41,22 +50,22 @@
 
 \pagestyle{fancy}
 
-\section*{Introduction}
-\markboth{Introduction}{}
-
+\section{Introduction}
 \thispagestyle{empty}
+
 Traditionally, text is composed to create a readable, coherent, and visually
 satisfying typeface that works invisibly, without the awareness of the reader.
 Even distribution of typeset material, with a minimum of distractions and
 anomalies, is aimed at producing clarity and transparency. Choice of typeface(s)
 is the primary aspect of text typography—prose fiction, non-fiction, editorial,
-educational, religious, scientific, spiritual, and commercial writing all have
+educational, religious, scientific, spi\-ritual, and commercial writing all have
 differing characteristics and requirements of appropriate typefaces and their
 fonts or styles.
 
 \clearpage
 
 \thispagestyle{empty}
+
 \section{Section}
 
 Traditionally, text is composed to create a readable, coherent, and visually
@@ -94,8 +103,8 @@ fonts or styles.
 
 \appendix
 
-\thispagestyle{empty}
 \section{The Appendix}
+\thispagestyle{empty}
 
 Traditionally, text is composed to create a readable, coherent, and visually
 satisfying typeface that works invisibly, without the awareness of the reader.

@@ -108,6 +108,32 @@
 \addtocontents{toc}{\protect\thispagestyle{empty}}
 \addtocontents{toc}{\protect\vspace*{3ex}}
 
+\RequirePackage{titlesec}
+
+\titleformat{\section}
+{\normalfont\Large\bfseries} % format of title
+{\makebox[1pc][r]{\thesection\hspace{1pc}}} % label
+{0pt} % length of separation between label and title
+{} % before-code hook
+\titlespacing*{\section}
+{-1pc}{18pt}{10pt}[10pc]
+
+\titleformat{\subsection}
+{\normalfont\large\bfseries} % format of title
+{\makebox[1pc][r]{\thesubsection\hspace{1pc}}} % label
+{0pt} % length of separation between label and title
+{} % before-code hook
+\titlespacing*{\subsection}
+{-1pc}{16pt}{10pt}[10pc]
+
+\titleformat{\subsubsection}
+{\normalfont\normalsize\bfseries} % format of title
+{\makebox[1pc][r]{\thesubsection\hspace{1pc}}} % label
+{0pt} % length of separation between label and title
+{} % before-code hook
+\titlespacing*{\subsubsection}
+{-1pc}{14pt}{10pt}[10pc]
+
 \RequirePackage[cmyk,dvipsnames]{xcolor}
 \RequirePackage{latexcolors}
 \definecolor{darkpowderblue}{rgb}{0.0, 0.2, 0.6}
@@ -133,13 +159,8 @@
 % Define headers and footers of the pages
 \RequirePackage{fancyhdr}
 \fancyhead{}
-\setlength{\headheight}{14.49998pt}
-\renewcommand{\sectionmark}[1]{%
-  \markboth{#1}{}}
-\fancyhead[LO,RE]{\bfseries\small\leftmark}
-\fancyhead[LE,RO]{\small\thepage}
 \fancyfoot{}
-% \renewcommand{\headrulewidth}{.25pt}
+\fancyfoot[LE,RO]{\small\thepage}
 \renewcommand{\headrulewidth}{\iffloatpage{0pt}{0pt}}
 \renewcommand{\footrulewidth}{0pt}
 
@@ -219,11 +240,11 @@
 
 \def\fr#1/#2{{\addfontfeatures{Fractions=On}#1/#2}}
 
-% Fine-tune hyperreferences (hyperref should be called last)
+% fine-tune hyperreferences (hyperref should be called last)
 \RequirePackage[unicode=false,xetex,psdextra]{hyperref}
 \RequirePackage{url}
-% The new pdf-management scheme loads the bookmarks package internally.
-% Authors should use hypersetup to set details, in root .tex file
+% the new pdf-management scheme loads the bookmarks package internally.
+% authors should use hypersetup to set details, in root .tex file
 \hypersetup{%
   bookmarksopen=false,%
   linktocpage,%
@@ -234,12 +255,11 @@
   pdfdisplaydoctitle=true%
 }
 \urlstyle{same}
+\providecommand\hrefurl[2]{\href{#1}{#2}}% in case \DocumentMetadata has not been loaded
 
 % PDF meta-information
 \AtBeginDocument{
   \hypersetup{%
-    pdftitle={\@title},%
-    pdfauthor={\@author},%
     pdfcreator={XeLaTeX},%
     pdfproducer={LaTeX with hyperref and xarticle}%
   }
