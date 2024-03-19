@@ -1,0 +1,109 @@
+% !TeX TS-program = xelatex
+% !TeX builder = latexmk
+% !BIB program = biblatex
+
+% XeLaTeX stuff:
+% Normalize any residual Unicode combining accents and write out error messages
+\XeTeXinputnormalization=1
+\tracinglostchars=1
+\tracingonline=1
+\XeTeXgenerateactualtext=1
+
+% Don't modify the `\DocumentMetadata` command unless you know what it does!
+% If this command throws an "undefined" error, your LaTeX system is out of date.
+\DocumentMetadata{
+  pdfstandard = a-2b,
+  pdfversion  = 1.7,
+  lang		    = en-US
+}
+
+\documentclass[twoside]{xarticle}
+
+\title{\hologo{XeLaTeX} Article}
+\author{The Author}
+\date{\relax}
+
+\setcounter{tocdepth}{3}
+
+\begin{document}
+\hyphenation{%
+  deva-nāgarī
+  deva-nagari
+  śaṅ-karā-cārya
+  san-s-krit
+}
+
+\thispagestyle{empty}
+\maketitle
+\tableofcontents
+
+\clearpage
+
+\pagestyle{fancy}
+
+\section*{Introduction}
+\markboth{Introduction}{}
+
+\thispagestyle{empty}
+Traditionally, text is composed to create a readable, coherent, and visually
+satisfying typeface that works invisibly, without the awareness of the reader.
+Even distribution of typeset material, with a minimum of distractions and
+anomalies, is aimed at producing clarity and transparency. Choice of typeface(s)
+is the primary aspect of text typography—prose fiction, non-fiction, editorial,
+educational, religious, scientific, spiritual, and commercial writing all have
+differing characteristics and requirements of appropriate typefaces and their
+fonts or styles.
+
+\clearpage
+
+\thispagestyle{empty}
+\section{Section}
+
+Traditionally, text is composed to create a readable, coherent, and visually
+satisfying typeface that works invisibly, without the awareness of the reader.
+Even distribution of typeset material, with a minimum of distractions and
+anomalies, is aimed at producing clarity and transparency. Choice of typeface(s)
+is the primary aspect of text typography—prose fiction, non-fiction, editorial,
+educational, religious, scientific, spiritual, and commercial writing all have
+differing characteristics and requirements of appropriate typefaces and their
+fonts or styles.
+
+\subsection{Sub Section}
+
+Traditionally, text is composed to create a readable, coherent, and visually
+satisfying typeface that works invisibly, without the awareness of the reader.
+Even distribution of typeset material, with a minimum of distractions and
+anomalies, is aimed at producing clarity and transparency. Choice of typeface(s)
+is the primary aspect of text typography—prose fiction, non-fiction, editorial,
+educational, religious, scientific, spiritual, and commercial writing all have
+differing characteristics and requirements of appropriate typefaces and their
+fonts or styles.
+
+\subsubsection{Sub Sub Section}
+
+Traditionally, text is composed to create a readable, coherent, and visually
+satisfying typeface that works invisibly, without the awareness of the reader.
+Even distribution of typeset material, with a minimum of distractions and
+anomalies, is aimed at producing clarity and transparency. Choice of typeface(s)
+is the primary aspect of text typography—prose fiction, non-fiction, editorial,
+educational, religious, scientific, spiritual, and commercial writing all have
+differing characteristics and requirements of appropriate typefaces and their
+fonts or styles.
+
+\clearpage
+
+\appendix
+
+\thispagestyle{empty}
+\section{The Appendix}
+
+Traditionally, text is composed to create a readable, coherent, and visually
+satisfying typeface that works invisibly, without the awareness of the reader.
+Even distribution of typeset material, with a minimum of distractions and
+anomalies, is aimed at producing clarity and transparency. Choice of typeface(s)
+is the primary aspect of text typography—prose fiction, non-fiction, editorial,
+educational, religious, scientific, spiritual, and commercial writing all have
+differing characteristics and requirements of appropriate typefaces and their
+fonts or styles.
+
+\end{document}
