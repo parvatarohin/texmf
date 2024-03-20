@@ -54,7 +54,7 @@
 \RequireXeTeX
 
 \RequirePackage{ifthen}
-\RequirePackage{xparse}
+\RequirePackage{xparse,etoolbox}
 \RequirePackage{xspace}
 \RequirePackage{tabularx}
 \RequirePackage{metalogo,hologo}
@@ -96,7 +96,7 @@
 \RequirePackage[title,titletoc]{appendix}
 \renewcommand{\appendixtocname}{List of appendices}
 
-% Hide Contents appearing from ToC, but add it to bookmarks
+% hide contents appearing from toc, but add it to bookmarks
 \let\temptableofcontents\tableofcontents
 \renewcommand{\tableofcontents}{
   % \clearpage
@@ -104,7 +104,7 @@
   \temptableofcontents
 }
 
-% Remove pagenumber appearing from TOC
+% remove pagenumber appearing from toc
 \addtocontents{toc}{\protect\thispagestyle{empty}}
 \addtocontents{toc}{\protect\vspace*{3ex}}
 
@@ -156,9 +156,25 @@
 \RequirePackage{caption}
 \captionsetup{margin=10pt, font=small, labelfont=bf}
 
-% Define headers and footers of the pages
 \RequirePackage{fancyhdr}
+\makeatletter
+\tracingpatches
+\patchcmd\maketitle
+{\global\let\@author\@empty
+  \global\let\@date\@empty
+  \global\let\@title\@empty}
+{}{}{}
+\AtBeginDocument{%
+  \fancyhead[LE,RO]{\small{\nouppercase{\@title}}}%
+  \fancyhead[RE,LO]{\small{\nouppercase{\@author}}}%
+}
+\makeatother
+
 \fancyhead{}
+\setlength{\headheight}{14.49998pt}
+%\fancyhead[LE,RO]{\small{\nouppercase{\leftmark}}}
+\renewcommand{\headrulewidth}{0pt}
+
 \fancyfoot{}
 \fancyfoot[LE,RO]{\small\thepage}
 \renewcommand{\headrulewidth}{\iffloatpage{0pt}{0pt}}
@@ -211,8 +227,8 @@
 {\endlist\endgroup}
 
 \newcommand{\dn}[1]{\textsanskrit{\devanagarifont#1}}
-\newcommand{\sa}[1]{\textsanskrit{\sanskritfont#1}}
-\newcommand{\tl}[1]{\emph{\textsanskrit\sanskritfont#1}}
+\newcommand{\sa}[1]{\emph{\textsanskrit\sanskritfont#1}}
+\newcommand{\tl}[1]{\textsanskrit{\sanskritfont#1}}
 
 \newcommand{\danda}{{\dn।}\@\xspace}
 \newcommand{\ddanda}{{\dn॥}\@\xspace}
@@ -252,6 +268,7 @@
   linkcolor=darkred,%
   urlcolor=darkred,%
   citecolor=darkred,%
+  pdfpagemode=UseNone,%
   pdfdisplaydoctitle=true%
 }
 \urlstyle{same}
